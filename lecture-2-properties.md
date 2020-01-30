@@ -32,7 +32,9 @@ Write the CSS to make the cat text blue.
 
 ```css
 /* css here */
+.feline{color:blue;
 
+}
 ```
 
 ---
@@ -49,6 +51,7 @@ Write the CSS to make the cat text blue.
 
 ```css
 /* css here */
+h2{color:blue;}
 
 ```
 
@@ -65,7 +68,7 @@ Write the CSS to make the cat text blue.
 
 ```css
 /* css here */
-
+.royalcat{color:blue;}
 ```
 
 ---
@@ -82,6 +85,7 @@ Write the CSS to make the dogs text red.
 
 ```css
 /* css here */
+.canine{color:red;}
 
 ```
 
@@ -99,7 +103,7 @@ Write the CSS to make the dogs text red.
 
 ```css
 /* css here */
-
+h1{color:red;}
 ```
 
 ---
@@ -117,7 +121,7 @@ What color is the `p` element?
 p {
     color: red
 }
-
+the hello is blue bc class overrides html tags
 ```
 
 ---
@@ -131,7 +135,7 @@ Every HTML element is a box that has 4 properties.
 | property  | notes |
 | --------- | ----- |
 | content   | the content 
-| `padding` | space around content
+| `padding` | space around content: included in the box
 | `border`  | border around padding
 | `margin`  | space outside of border
 
@@ -153,13 +157,15 @@ Every HTML element is a box that has 4 properties.
     - `margin: top | right | bottom | left`
     - `margin: 20px 10px 5px 0`
     - `margin: 20px 10px`
+    -   `margin: 20px 10px 0 (20-10-0-10)`
     - `margin: 20px`
-
+the margin is always outside of the box
 ---
 
 ### Example
 
 What is the width and height of this box?
+`square box, padding is included in the content`
 
 `<p class='greeting'>Hello</p>`
 
@@ -180,10 +186,11 @@ We can fix this with the `box-sizing` CSS property.
 ```css
 * {
     box-sizing: border-box;
-}
+}the border is now part of the box (the right size(size input for box))
 ```
 
 _What is the meaning of `*`?_
+the asterix applies to everything, like p tags etc.
 
 ---
 
@@ -208,7 +215,7 @@ _What is the meaning of `*`?_
 ---
 
 ### `display: inline`
-
+-follows one another back to back
 - Displays an element as an inline element.
 - Any height and width properties will have no effect.
 
@@ -217,6 +224,7 @@ _What is the meaning of `*`?_
 ### `display: inline-block`
 
 - The element itself is formatted as an inline element, but you can apply height and width values.
+-treating the element as inline, using the height and width element
 
 ---
 
@@ -302,7 +310,7 @@ Note: When using this property, you will need to set the parent's position as we
 ```html
 <div class="container">
    <p>Hey!</p>
-   <p class="child">there!</div>
+   <p class="child">there!</p>
 </div>
 ```
 

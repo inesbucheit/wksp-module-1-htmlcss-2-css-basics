@@ -3,13 +3,22 @@ p {
 }
 
 .one {
+    background-color: lightpink;
+    
+    margin:0;
 
 }
 
 .two {
+background-color: magenta;
 
+margin:0;
 }
 
 .three {
+    font-size: 75px;
+
+    margin: 10px;
+    font-stretch: extra-expanded;
 
 }

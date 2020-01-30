@@ -10,3 +10,34 @@ html, body, div, h1, h2, p, ul, li {
 }
 
 /* ADD CSS BELOW */
+
+h1{
+	text-align: center;
+	font-size: large;
+}
+
+h2{
+text-align: left;
+font-size: medium;
+
+}
+
+.row1{
+	display: flex;
+}
+
+.col1{
+	background-color: lightgrey;
+	margin:50px;
+	border: 1px dashed grey;
+	padding: 50px 20px 20px ;
+
+	text-align: center;
+	align-self: center;
+	
+}
+
+.img{
+	max-width: 50px;
+	max-height: 100px;
+}
